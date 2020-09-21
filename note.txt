@@ -1,0 +1,41 @@
+Angular is great for building single page applications where parts of the view get refreshed async without having to reload the entire page.
+
+Modular approach: clear structure 
+Re-usable code
+in-built capabilities: validation routing .. development quicker and easier
+
+service: take the basic logic of your application
+
+Angular App: one or more modules
+Module: One or more components and services
+Components: Html+class(logic of the particular view) Components represents diff portion of view in Browser
+
+
+{{ }}Interpolation
+
+directive: custom html attribute
+
+to easily access DOM element and their properties
+
+cannot bind to ngModel since it is a unknown property of 'input'==> separate model called forms model
+
+pipe allow us to transform data before displaying in the view
+pipe apply to String, Number, Date
+! it is change the data only for the view, it does not change the value of the property in the class
+
+Service: class with a specific purpose(share data, implement app logic,external interaction like connect )
+
+DI: is a design pattern in which a class receives its dependencies from external sources rather than creating them itself.
+DI framework has sth called injector when you register all of your dependencies
+injector is like a container of all the dependencies
+
+1: define the EmployeeService class 2: Register Injector 3: Declare as dependency in Emp-list and EmpDetail
+
+1:HTTP Get req from EmployeeService
+2:Receive the observable(returned as a result of the HTTP call) and cast it into an employee array
+3:Subscribe to the observable from Emp-list and EmpDetail
+4:Assign the employee array to a local variable
+
+RxJS
+1:Reactive Extensions for js
+2:External library to work with observables
